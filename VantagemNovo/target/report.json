@@ -1,0 +1,240 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Deve inserir uma conta com sucesso",
+        "description": "",
+        "id": "cadastro-de-novo-usuário;deve-inserir-uma-conta-com-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 270536100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContaSteps.screenShot()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1653942600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContaSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 5130539200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que estou acessando a aplicação",
+            "match": {
+              "location": "InserirContaSteps.que_estou_acessando_a_aplicação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1870075300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "seleciono usuário",
+            "match": {
+              "location": "InserirContaSteps.seleciono_usuário()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 664006300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "seleciono criar novo usuário",
+            "match": {
+              "location": "InserirContaSteps.seleciono_criar_novo_usuário()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 513531300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "informo o nome de usuário",
+            "match": {
+              "location": "InserirContaSteps.informoONomeDeUsuário()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 252313300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "informo o email",
+            "match": {
+              "location": "InserirContaSteps.informoOEmail()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 191648700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "informo a senha",
+            "match": {
+              "location": "InserirContaSteps.informoASenha()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 329346100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "confirmo a senha",
+            "match": {
+              "location": "InserirContaSteps.confirmoASenha()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 219119000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "informo o primeiro nome",
+            "match": {
+              "location": "InserirContaSteps.informoOPrimeiroNome()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 221650800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "informo o último nome",
+            "match": {
+              "location": "InserirContaSteps.informoOÚltimoNome()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 213887900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "informo o número de telefone",
+            "match": {
+              "location": "InserirContaSteps.informoONúmeroDeTelefone()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 177190800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "informo o País",
+            "match": {
+              "location": "InserirContaSteps.informoOPaís()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 251775900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "informo a Cidade",
+            "match": {
+              "location": "InserirContaSteps.informoACidade()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 281719300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "informo o endereço",
+            "match": {
+              "location": "InserirContaSteps.informoOEndereço()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 214063800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "informo o Estado",
+            "match": {
+              "location": "InserirContaSteps.informoOEstado()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 225792000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "informo o cep",
+            "match": {
+              "location": "InserirContaSteps.informoOCep()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 229236500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "seleciono concordo",
+            "match": {
+              "location": "InserirContaSteps.selecionoConcordo()"
+            },
+            "keyword": "E "
+          }
+        ]
+      }
+    ],
+    "name": "cadastro de novo usuário",
+    "description": "\r\nComo um novo usuário\r\nGostaria de criar uma nova conta\r\nPara poder acessar o site",
+    "id": "cadastro-de-novo-usuário",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/novo_usuario.feature"
+  }
+]
