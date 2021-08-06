@@ -16,7 +16,7 @@
         "after": [
           {
             "result": {
-              "duration": 270536100,
+              "duration": 232631700,
               "status": "passed"
             },
             "match": {
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1653942600,
+              "duration": 1157853800,
               "status": "passed"
             },
             "match": {
@@ -38,7 +38,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5130539200,
+              "duration": 5592421200,
               "status": "passed"
             },
             "line": 9,
@@ -50,7 +50,7 @@
           },
           {
             "result": {
-              "duration": 1870075300,
+              "duration": 1736416900,
               "status": "passed"
             },
             "line": 10,
@@ -62,7 +62,7 @@
           },
           {
             "result": {
-              "duration": 664006300,
+              "duration": 5634784900,
               "status": "passed"
             },
             "line": 11,
@@ -70,163 +70,79 @@
             "match": {
               "location": "InserirContaSteps.seleciono_criar_novo_usuário()"
             },
-            "keyword": "Quando "
+            "keyword": "E "
           },
           {
             "result": {
-              "duration": 513531300,
+              "duration": 255716100,
               "status": "passed"
             },
             "line": 12,
-            "name": "informo o nome de usuário",
+            "name": "vou para outra tela onde informo o nome de usuário",
             "match": {
-              "location": "InserirContaSteps.informoONomeDeUsuário()"
+              "location": "InserirContaSteps.vou_para_outra_tela_onde_informo_o_nome_de_usuário()"
             },
-            "keyword": "E "
+            "keyword": "Então "
           },
           {
             "result": {
-              "duration": 252313300,
+              "duration": 359008700,
               "status": "passed"
             },
             "line": 13,
-            "name": "informo o email",
+            "name": "email",
             "match": {
-              "location": "InserirContaSteps.informoOEmail()"
+              "location": "InserirContaSteps.email()"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 191648700,
+              "duration": 304743400,
               "status": "passed"
             },
             "line": 14,
-            "name": "informo a senha",
+            "name": "senha",
             "match": {
-              "location": "InserirContaSteps.informoASenha()"
+              "location": "InserirContaSteps.senha()"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 329346100,
+              "duration": 294731800,
               "status": "passed"
             },
             "line": 15,
             "name": "confirmo a senha",
             "match": {
-              "location": "InserirContaSteps.confirmoASenha()"
+              "location": "InserirContaSteps.confirmo_a_senha()"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 219119000,
+              "duration": 304157400,
               "status": "passed"
             },
             "line": 16,
-            "name": "informo o primeiro nome",
+            "name": "seleciono concordo",
             "match": {
-              "location": "InserirContaSteps.informoOPrimeiroNome()"
+              "location": "InserirContaSteps.seleciono_concordo()"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 221650800,
+              "duration": 216090000,
               "status": "passed"
             },
             "line": 17,
-            "name": "informo o último nome",
+            "name": "clico em registrar",
             "match": {
-              "location": "InserirContaSteps.informoOÚltimoNome()"
+              "location": "InserirContaSteps.clico_em_registrar()"
             },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 213887900,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "informo o número de telefone",
-            "match": {
-              "location": "InserirContaSteps.informoONúmeroDeTelefone()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 177190800,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "informo o País",
-            "match": {
-              "location": "InserirContaSteps.informoOPaís()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 251775900,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "informo a Cidade",
-            "match": {
-              "location": "InserirContaSteps.informoACidade()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 281719300,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "informo o endereço",
-            "match": {
-              "location": "InserirContaSteps.informoOEndereço()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 214063800,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "informo o Estado",
-            "match": {
-              "location": "InserirContaSteps.informoOEstado()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 225792000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "informo o cep",
-            "match": {
-              "location": "InserirContaSteps.informoOCep()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 229236500,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "seleciono concordo",
-            "match": {
-              "location": "InserirContaSteps.selecionoConcordo()"
-            },
-            "keyword": "E "
+            "keyword": "Então "
           }
         ]
       }

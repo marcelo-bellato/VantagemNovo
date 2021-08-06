@@ -33,21 +33,21 @@ formatter.step({
 formatter.step({
   "line": 11,
   "name": "seleciono criar novo usuário",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 12,
-  "name": "informo o nome de usuário",
   "keyword": "E "
 });
 formatter.step({
+  "line": 12,
+  "name": "vou para outra tela onde informo o nome de usuário",
+  "keyword": "Então "
+});
+formatter.step({
   "line": 13,
-  "name": "informo o email",
+  "name": "email",
   "keyword": "E "
 });
 formatter.step({
   "line": 14,
-  "name": "informo a senha",
+  "name": "senha",
   "keyword": "E "
 });
 formatter.step({
@@ -57,167 +57,83 @@ formatter.step({
 });
 formatter.step({
   "line": 16,
-  "name": "informo o primeiro nome",
+  "name": "seleciono concordo",
   "keyword": "E "
 });
 formatter.step({
   "line": 17,
-  "name": "informo o último nome",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 18,
-  "name": "informo o número de telefone",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 19,
-  "name": "informo o País",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 20,
-  "name": "informo a Cidade",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 21,
-  "name": "informo o endereço",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 22,
-  "name": "informo o Estado",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 23,
-  "name": "informo o cep",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 24,
-  "name": "seleciono concordo",
-  "keyword": "E "
+  "name": "clico em registrar",
+  "keyword": "Então "
 });
 formatter.match({
   "location": "InserirContaSteps.que_estou_acessando_a_aplicação()"
 });
 formatter.result({
-  "duration": 5130539200,
+  "duration": 5592421200,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContaSteps.seleciono_usuário()"
 });
 formatter.result({
-  "duration": 1870075300,
+  "duration": 1736416900,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContaSteps.seleciono_criar_novo_usuário()"
 });
 formatter.result({
-  "duration": 664006300,
+  "duration": 5634784900,
   "status": "passed"
 });
 formatter.match({
-  "location": "InserirContaSteps.informoONomeDeUsuário()"
+  "location": "InserirContaSteps.vou_para_outra_tela_onde_informo_o_nome_de_usuário()"
 });
 formatter.result({
-  "duration": 513531300,
+  "duration": 255716100,
   "status": "passed"
 });
 formatter.match({
-  "location": "InserirContaSteps.informoOEmail()"
+  "location": "InserirContaSteps.email()"
 });
 formatter.result({
-  "duration": 252313300,
+  "duration": 359008700,
   "status": "passed"
 });
 formatter.match({
-  "location": "InserirContaSteps.informoASenha()"
+  "location": "InserirContaSteps.senha()"
 });
 formatter.result({
-  "duration": 191648700,
+  "duration": 304743400,
   "status": "passed"
 });
 formatter.match({
-  "location": "InserirContaSteps.confirmoASenha()"
+  "location": "InserirContaSteps.confirmo_a_senha()"
 });
 formatter.result({
-  "duration": 329346100,
+  "duration": 294731800,
   "status": "passed"
 });
 formatter.match({
-  "location": "InserirContaSteps.informoOPrimeiroNome()"
+  "location": "InserirContaSteps.seleciono_concordo()"
 });
 formatter.result({
-  "duration": 219119000,
+  "duration": 304157400,
   "status": "passed"
 });
 formatter.match({
-  "location": "InserirContaSteps.informoOÚltimoNome()"
+  "location": "InserirContaSteps.clico_em_registrar()"
 });
 formatter.result({
-  "duration": 221650800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContaSteps.informoONúmeroDeTelefone()"
-});
-formatter.result({
-  "duration": 213887900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContaSteps.informoOPaís()"
-});
-formatter.result({
-  "duration": 177190800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContaSteps.informoACidade()"
-});
-formatter.result({
-  "duration": 251775900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContaSteps.informoOEndereço()"
-});
-formatter.result({
-  "duration": 281719300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContaSteps.informoOEstado()"
-});
-formatter.result({
-  "duration": 214063800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContaSteps.informoOCep()"
-});
-formatter.result({
-  "duration": 225792000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContaSteps.selecionoConcordo()"
-});
-formatter.result({
-  "duration": 229236500,
+  "duration": 216090000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 270536100,
+  "duration": 232631700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1653942600,
+  "duration": 1157853800,
   "status": "passed"
 });
 });
