@@ -1,96 +1,107 @@
 package br.sp.bellato.steps;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+import org.junit.Assert;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import cucumber.api.java.After;
+import br.sp.bellato.page.CadastroPage;
+import br.sp.bellato.page.InicialPage;
+import br.sp.bellato.page.LoginPage;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 
 public class InserirContaSteps {
-	
-private WebDriver driver;	
-		
-	@Dado("^que estou acessando a aplicação$")
-	public void que_estou_acessando_a_aplicação() throws Throwable {
-		driver = new ChromeDriver();	
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.manage().window().maximize();			
-		driver.get("http://advantageonlineshopping.com/#/");
-	}
 
-	@Quando("^seleciono usuário$")
-	public void seleciono_usuário() throws Throwable {
-		driver.findElement(By.id("menuUserLink")).click();
+	InicialPage inicialPage = new InicialPage();	
+	CadastroPage cadastroPage = new CadastroPage();
+	LoginPage loginPage = new LoginPage();	
+	
+	@Dado("^que seleciono usuário$")
+	public void selecionoUsuário() throws Throwable {
+		inicialPage.setUser();
 	}
 
 	@Quando("^seleciono criar novo usuário$")
-	public void seleciono_criar_novo_usuário() throws Throwable {
+	public void selecionoCriarNovoUsuário() throws Throwable {
 		Thread.sleep(2000);
-		driver.findElement(By.linkText("CREATE NEW ACCOUNT")).click();
+		loginPage.setNewAccount();
 	}
 
-	@Então("^vou para outra tela onde informo o nome de usuário$")
-	public void vou_para_outra_tela_onde_informo_o_nome_de_usuário() throws Throwable {
-		driver.findElement(By.name("usernameRegisterPage")).sendKeys("Marcelo229");
-	}
-
-	@Então("^informo o email$")
-	public void email() throws Throwable {
-		driver.findElement(By.name("emailRegisterPage")).sendKeys("marcelo@google.com");
-	}
-
-	@Então("^informo a senha$")
-	public void senha() throws Throwable {
-		driver.findElement(By.name("passwordRegisterPage")).sendKeys("Os@sco10");
-	}
-
-	@Então("^confirmo a senha$")
-	public void confirmo_a_senha() throws Throwable {
-		driver.findElement(By.name("confirm_passwordRegisterPage")).sendKeys("Os@sco10");
-	}
-
-	@Então("^seleciono concordo$")
-	public void seleciono_concordo() throws Throwable {
-		driver.findElement(By.name("i_agree")).click();
-	}
-
-	@Então("^clico em registrar com sucesso$")
-	public void clico_em_registrar() throws Throwable {
-		driver.findElement(By.id("register_btnundefined")).click();
+	@Quando("^informo o usuário \"([^\"]*)\"$")
+	public void informoOUsuário(String arg1) throws Throwable {
+		cadastroPage.setUserName(arg1);
 	}	
-		
 	
-	@After(order = 1)
-	public void screenShot() {
-		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		try {
-			FileUtils.copyFile(file, new File("target/screenshots/nome.jpg"));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+	@Quando("^informo o email \"([^\"]*)\"$")
+	public void informoOEmail(String arg1) throws Throwable {
+	    cadastroPage.setEmail(arg1);
+	}
 	
+	@Quando("^informo a senha \"([^\"]*)\"$")
+	public void informoASenha(String arg1) throws Throwable {
+	    cadastroPage.setSenha(arg1);
 	}
-					
-	@After(order = 0)
-	public void fecharBrowser() {
-		driver.quit();
-	}
-
-		
-		
-		
-		
+	
+	@Quando("^confirmo a senha \"([^\"]*)\"$")
+	public void confirmoASenha(String arg1) throws Throwable {
+		cadastroPage.setConfirmSenha(arg1);
 	}
 
+	
+	@Quando("^informo o nome \"([^\"]*)\"$")
+	public void informoONome(String arg1) throws Throwable {
+	    cadastroPage.setNome(arg1);
+	}
+	
+	@Quando("^informo o sobrenome \"([^\"]*)\"$")
+	public void informoOSobrenome(String arg1) throws Throwable {
+	    cadastroPage.setSobrenome(arg1);
+	}
+	
+	@Quando("^informo o telefone \"([^\"]*)\"$")
+	public void informoOTelefone(String arg1) throws Throwable {
+	    cadastroPage.setTelefone(arg1);
+	}
+	
+	@Quando("^informo o País \"([^\"]*)\"$")
+	public void informoOPaís(String arg1) throws Throwable {
+	    cadastroPage.setPais(arg1);
+	}
 
+	@Quando("^informo a Cidade \"([^\"]*)\"$")
+	public void informoACidade(String arg1) throws Throwable {
+	    cadastroPage.setCidade(arg1);
+	}
 
+	@Quando("^informo o endereço \"([^\"]*)\"$")
+	public void informoOEndereço(String arg1) throws Throwable {
+	    cadastroPage.setEndereco(arg1);
+	}
+
+	@Quando("^informo o Estado \"([^\"]*)\"$")
+	public void informoOEstado(String arg1) throws Throwable {
+	    cadastroPage.setEstado(arg1);
+	}
+
+	@Quando("^informo o CEP \"([^\"]*)\"$")
+	public void informoOCEP(String arg1) throws Throwable {
+	    cadastroPage.setCep(arg1);
+	}
+
+	@Quando("^clico em concordar com as condições$")
+	public void clicoEmConcordarComAsCondições() throws Throwable {
+	    cadastroPage.setIagree();
+	}
+
+	@Quando("^clico em registrar$")
+	public void clicoEmRegistrar() throws Throwable {
+	    cadastroPage.setRegister();
+	}	
+	
+	
+	@Então("^vou para a página inicial$")
+	public void vouParaAPáginaInicial() throws Throwable {
+		Thread.sleep(1000);
+		Assert.assertEquals("Marcelo229", inicialPage.obterLogin());
+	}
+
+}
